@@ -1,0 +1,17 @@
+<div class="score_panel">
+  <info-panel [stoneColor]="CELL_STATUS.BLACK"
+              [stoneNums]="board.stoneNums[CELL_STATUS.BLACK]"
+              ></info-panel>
+
+  <div class="arrow" [class]="board.turn">
+    <div>◀</div>
+    <div>▶</div>
+  </div>
+
+  <info-panel [stoneColor]="CELL_STATUS.WHITE"
+              [stoneNums]="board.stoneNums[CELL_STATUS.WHITE]"></info-panel>
+</div>
+
+<div class="frame">
+  <board #board></board>
+</div>

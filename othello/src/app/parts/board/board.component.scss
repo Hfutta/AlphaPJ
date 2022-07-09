@@ -1,0 +1,21 @@
+.board_frame {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  
+    cell {
+      width: calc((100% - 1px) / 8 - 1px);
+      height: calc((100% - 1px) / 8 - 1px);
+      border-left: 1px solid black;
+      border-top: 1px solid black;
+    }
+    cell:nth-child(8n) {
+      border-right: 1px solid black;
+    }
+    cell:nth-child(n+57) {
+      border-bottom: 1px solid black;
+    }
+  }
+  

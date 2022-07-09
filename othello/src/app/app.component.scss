@@ -1,0 +1,45 @@
+.frame {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  
+  board {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.score_panel {
+  display: flex;
+  margin-bottom: 30px;
+  flex: 1 1 auto;
+
+  .arrow {
+    font-size: 30px;
+    line-height: 100%;
+    width: 60px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .black {
+    div:first-child {
+      color: black;
+    }
+    div:last-child {
+      color: #CCC;
+    }
+  }
+  .white {
+    div:first-child {
+      color: #CCC;
+    }
+    div:last-child {
+      color: black;
+    }
+  }
+}
+
+  

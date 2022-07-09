@@ -1,0 +1,15 @@
+<div class="board_frame" >
+
+  <cell
+    *ngFor="let _ of matrix; let i = index"
+    [status]="matrix[i]"
+    (click)="onBoardClick(i)">
+  </cell>
+  
+</div>
+<div>Turn: {{ turn }}</div>
+<div>BLACK: {{ stoneNums["black"] }}</div>
+<div>WHITE: {{ stoneNums["white"] }}</div>
+<div>EMPTY: {{ emptyCells.size }}</div>
+
+  

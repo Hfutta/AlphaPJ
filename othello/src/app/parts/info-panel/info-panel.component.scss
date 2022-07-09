@@ -1,0 +1,22 @@
+.info_frame {
+  --W: var(--width, 120px);
+  --H: var(--height, 60px);
+
+  width: var(--W);
+  height: var(--H);
+  display: flex;
+  
+  .cell_frame {
+    width: 50%;
+    height: 100%;
+  }
+  
+  .stone_nums {
+    width: 50%;
+    height: 100%;
+    line-height: var(--H);
+    font-size: calc(var(--H) * 0.8);
+    text-align: center;
+  }
+}
+  
